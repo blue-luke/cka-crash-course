@@ -1,3 +1,8 @@
+# 1, 2, 3, 4 are new. Do first
+# 12, 13 are challenging but from CKAD. Do third. Might be able to pass exam without doing these. But I need to understand and over this material eventually
+# 14, 15, 16, 17 are troubleshooting, don't know how difficult they are. Do second
+# 5, 6, 7, 8, 9, 10, 11 are largely CKAD
+
 # Certified Kubernetes Administrator (CKA) Crash Course
 
 The ability to manage, troubleshoot and monitor a Kubernetes cluster is in high demand. In response, the Cloud Native Computing Foundation (CNCF) developed the [Certified Kubernetes Administrator (CKA) certification](https://www.cncf.io/certification/cka/) to establish a administrator's credibility and value in the job market to confidently work in a Kubernetes environment. The exam is different from the typical multi-choice format of other certifications. It’s completely performance-based and requires deep knowledge of the tasks at hand under immense time pressure. Are you ready to pass the test on the first go?
