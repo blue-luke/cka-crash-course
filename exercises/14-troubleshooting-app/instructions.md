@@ -8,6 +8,10 @@ The following image shows the high-level architecture.
 
 > **_NOTE:_** If you do not already have a cluster, you can create one by using minikube or you can use the Katacoda lab ["Troubleshooting a Deployment"](https://learning.oreilly.com/scenarios/cka-prep-troubleshooting/9781492099192/).
 
+Ex1:
+Completed the above with guidance. The solution was elementary, just changing the selector. I actually stumbled on an unrelated thing - I was using the service ip rather than the node ip to ping the deployment. This is a silly mistake.
+I also didn't create the objects in the correct namespace. Another silly mistake
+
 ## Fixing the issue in namepace "gemini"
 
 1. Create a new namespace named `gemini`.
