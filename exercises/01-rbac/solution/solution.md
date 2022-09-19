@@ -19,7 +19,7 @@ Context "johndoe-context" created.
 Set the `johndoe-context` context in the `kubeconfig` file. You can check the current context using `config current-context`.
 
 ```
-$ kubectl config use-context johndoe-context
+$ kubectl config set-context johndoe-context --cluster=minikube --user=johndoe
 Switched to context "johndoe-context".
 $ kubectl config current-context
 johndoe-context
@@ -31,6 +31,20 @@ Creating a Pod in the current context won't work as the user `johndoe` does have
 $ kubectl run nginx --image=nginx --port=80
 Error from server (Forbidden): pods is forbidden: User "johndoe" cannot create resource "pods" in API group "" in the namespace "default"
 ```
+
+
+
+
+
+
+##########
+I followed the above and got a different error: 
+error: You must be logged in to the server (Unauthorized)
+##########
+
+
+
+
 
 ## Granting Access to the User
 
