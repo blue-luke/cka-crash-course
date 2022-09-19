@@ -6,6 +6,15 @@ In this exercise, you will learn how to create a cluster using kubeadm. The clus
 
 ## Initializing the Control Plane Node
 
+Review the kubeadm init flags
+
+Understand role of the CNI plugin
+
+Check ssh procedure
+
+
+
+
 1. Shell into control plane node using the command `vagrant ssh kube-control-plane`.
 2. Initializing the control plane using the `kubeadm init` command. Provide `172.18.0.0/16` as the IP addresses for the Pod network. Use `192.168.56.10` for the IP address the API Server will advertise it's listening on.
 3. After the `init` command finished, run the necessary commands to run the cluster as non-root user.
