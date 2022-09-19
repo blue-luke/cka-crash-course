@@ -11,3 +11,5 @@ In this exercise, you will identify the configuration of the etcd database, back
 5. Create a snapshot of the etcd database. Store the backup in the file `/opt/etcd-backup.db`.
 6. Restore the original state of the cluster from the backup file at `/opt/etcd-backup.db` to the directory `/var/lib/from-backup`.
 7. Point etcd to the new directory containing the restored backup. Restart the etcd Pod.
+
+A few steps to understand and practice. A few filepaths to memorise

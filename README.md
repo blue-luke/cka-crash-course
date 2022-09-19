@@ -4,6 +4,7 @@
 # 5, 6, 7, 8, 9, 10, 11 are largely CKAD
 
 Return to 1 - couldn't get a user authenticated with a minikube cluster to allow me to engage with the RBAC exercise. RBAC itself looks straightforward
+1, 2, 3, 4 understood and reviewed. Need to practice and memorise a few things
 
 # Certified Kubernetes Administrator (CKA) Crash Course
 
