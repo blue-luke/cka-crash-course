@@ -25,3 +25,7 @@ In this exercise, you will learn how to upgrade the cluster version from 1.22.0 
 6. Restart the kubelet.
 7. Uncordon the node.
 8. Exit out of the node.
+
+See notes in CKA google doc
+
+A few things to memorise? The commands and the general process
