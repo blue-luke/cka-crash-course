@@ -4,6 +4,8 @@ In this exercise, you will learn how to troubleshooting the underlying issue of 
 
 > **_NOTE:_** The file [vagrant-setup.md](../common/vagrant-setup.md) describes the setup instructions and commands for Vagrant and VirtualBox. If you do not want to use the Vagrant environment, you can use the Katacoda lab ["Troubleshooting a control plane node"](https://learning.oreilly.com/scenarios/cka-prep-troubleshooting/9781492099215/).
 
+Solved the above - authentication file was not being reference correctly (- --authentication-kubeconfig=/etc/kubernetes/scheduler-authentication.conf), so ssh'd onto the master node, modified the scheduler yaml in /etc/kubernetes/manifests
+
 1. Check the status of the Deployment named `deploy` and its Pods. How many Pods have been scheduled?
 2. Check the events of any of the Pods.
 3. Check the status of the Pods in the namespace `kube-system`. Can you identify an issue?
