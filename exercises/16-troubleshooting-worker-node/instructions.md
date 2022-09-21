@@ -8,3 +8,8 @@ In this exercise, you will learn how to troubleshooting the underlying issue of 
 2. Shell into the node having an issue and identify the root cause.
 3. Fix the root cause and restart the node.
 4. The status of the previously failing node should say "Ready".
+
+systemctl
+journalctl
+
+This was baffling stuff. Even following the steps was confusing. Many tools and documents were mentioned that were brand new to me. Return to
