@@ -9,7 +9,8 @@ In this exercise, you will learn how to troubleshooting the underlying issue of 
 3. Fix the root cause and restart the node.
 4. The status of the previously failing node should say "Ready".
 
-systemctl
-journalctl
+systemctl - this looks like a task manager for linux in the command line
+sysctl - which is completely different to the above. It is used to modify kernel parameters at runtime. The kernel is the core of an operating system. A graphical interface might go on top of the kernel
+journalctl - this is how you query the systemd journal
 
 This was baffling stuff. Even following the steps was confusing. Many tools and documents were mentioned that were brand new to me. Return to
