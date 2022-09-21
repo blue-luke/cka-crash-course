@@ -4,6 +4,12 @@ In this exercise, you will create an Ingress with a simple rule.
 
 > **_NOTE:_** Kubernetes requires running an Ingress Controller to evaluate Ingress rules. Make sure your cluster employs an [Ingress Controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/). You can find installation guidance in the file [ingress-controller-setup.md](./ingress-controller-setup.md). If you do not already have a cluster, you can create one by using minikube or you can use the Katacoda lab ["Creating an Ingress"](https://learning.oreilly.com/scenarios/cka-prep-creating/9781492099130/).
 
+A multistep process, sucessful:
+- Creating and exposing a pod
+- Creating a clusterip service that points to that pod (80:8080). Give the clusterip service the external ip of the control plane node
+- Create an ingress. Enter the url, ingress class name, and point it to the correct backend service and port. It can all be done in the command line (in this case)
+- Curl the ip address. The url can be entered as part of the header, eg curl -H "Host: URL" IP
+
 1. Verify that the Ingress Controller is running.
 2. Create a new Deployment with the image `bmuschko/nodejs-hello-world:1.0.0`.
 3. Expose the Deployment with a Service of type `NodePort` on port 3000.
@@ -12,3 +18,4 @@ In this exercise, you will create an Ingress with a simple rule.
 6. List the Ingress object.
 7. Add an entry in `/etc/hosts` that maps the virtual node IP address to the host `hello-world.exposed`.
 8. Make a request to `http://hello-world.exposed`. You should see the message "Hello World".
+
