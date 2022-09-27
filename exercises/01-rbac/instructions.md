@@ -12,6 +12,8 @@ The following image shows the high-level architecture.
 
 Run the following commands will create the key and certificate sign request (CSR) needed for the user on Minikube. The user will be called `johndoe`. For detailed information, see this [blog post](https://www.adaltas.com/en/2019/08/07/users-rbac-kubernetes/#users-creation-and-authentication-with-x509-client-certificates). You can assume that you do not have to memorize these instructions for the exam.
 
+What are the three things that are needed and why? key, csr and cert?
+
 ```
 $ mkdir cert && cd cert
 $ openssl genrsa -out johndoe.key 2048
@@ -24,6 +26,12 @@ Signature ok
 subject=/CN=johndoe/O=group1
 Getting CA Private Key
 ```
+
+Creating a user is about kubeconfig, not the cluster itself. It is a matter of how you connect with it, rather than being an object you create in the cluster
+
+Nonetheless, authenticated users still need authorisation - they need roles and role bindings, or cluster roles and cluster role bindings
+
+kubectl config merely modifies the kube/config file
 
 ## Creating the User
 
@@ -40,3 +48,7 @@ Getting CA Private Key
 5. Switch to the context named `johndoe-context`.
 6. Create a new Pod named `nginx` with the image `nginx`. What would you expect to happen?
 7. List the Pods in the namespace. What would you expect to happen?
+
+My overview of steps:
+- Authentication is mediated by kube config. We can use certificates or gcloud accounts
+- Authenticated users still need authorisation. This means roles and role bindings (or their cluster equivalent)

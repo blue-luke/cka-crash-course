@@ -17,6 +17,9 @@ Don't forget to list all in a namespace. I overlooked the presence of a daemonse
 A daemonset is an object that runs copies of a pod on every node. Daemonsets ARE NAMESPACED. $ k get daemonsets -A
 I got distracted by other pods failing. The question asked me to fix certain pods. I thought the other failing pods were a red herring. They were actually failing because of the initial failing pods. Fixing those (kube proxy), fixed the others (core dns)
 
+CNI is specified in /etc/cni/net.d on the various nodes
+
+Container network gets very complex: https://learnk8s.io/kubernetes-network-packets g
 
 ## Fixing the issue in namespace "network"
 
