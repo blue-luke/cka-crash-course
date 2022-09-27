@@ -13,3 +13,7 @@ In this exercise, you will identify the configuration of the etcd database, back
 7. Point etcd to the new directory containing the restored backup. Restart the etcd Pod.
 
 A few steps to understand and practice. A few filepaths to memorise
+
+Etcd is a pod in kube-system
+Presume it writes to the node file system, so accessing it for cert info is equivalent to sshing onto node
+Snapshot itself has to be doe via the node?
