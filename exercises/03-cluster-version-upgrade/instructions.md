@@ -29,3 +29,12 @@ In this exercise, you will learn how to upgrade the cluster version from 1.22.0 
 See notes in CKA google doc
 
 A few things to memorise? The commands and the general process
+
+Upgrade
+Drain
+Apply
+Uncordon
+Upgrade
+Restart
+
+Same for worker nodes
