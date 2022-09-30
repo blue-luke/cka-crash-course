@@ -17,3 +17,15 @@ A few steps to understand and practice. A few filepaths to memorise
 Etcd is a pod in kube-system
 Presume it writes to the node file system, so accessing it for cert info is equivalent to sshing onto node
 Snapshot itself has to be doe via the node?
+
+2nd attempt
+Difficult. I don't understand what is going on. Messy as I wasn't focussing
+Need to find the etc d pod. This is likely to be in kube-system namespace
+Where does the endpoint come from? It is also in the etcd pod descrition --listen-client-urls, but it is not needed, as we are on the control plane node already
+The etcd backup command needs to be directed to 3 distinct files
+We use the pod volume hostpaths to find where on the control plane etcd certs etc are stored
+Carry out the copy command
+Leave it there for safe keeping
+To restore, use the restore command. I overlooked this
+Then, manually change the path on the pod for etcd-data 
+Backup the existing file before restoring it
