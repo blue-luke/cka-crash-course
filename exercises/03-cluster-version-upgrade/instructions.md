@@ -30,7 +30,7 @@ See notes in CKA google doc
 
 A few things to memorise? The commands and the general process
 
-Upgrade
+Upgrade - upgrading subsquent control plane nodes is slightly different to upgrading the first one, see docs
 Drain
 Apply
 Uncordon
@@ -38,3 +38,11 @@ Upgrade
 Restart
 
 Same for worker nodes
+
+Attempt 2
+- This is elementary
+Could figure out a few things
+- Why do daemonsets have to be ignored? What does daemon-reload accomplish?
+- Do I have to ssh onto the nodes to upgrade them? I don't think so
+- The specifics of what kubeadm, kubectl and kubelet do
+- Why draining the nodes is necessary

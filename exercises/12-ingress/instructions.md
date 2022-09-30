@@ -19,3 +19,6 @@ A multistep process, sucessful:
 7. Add an entry in `/etc/hosts` that maps the virtual node IP address to the host `hello-world.exposed`.
 8. Make a request to `http://hello-world.exposed`. You should see the message "Hello World".
 
+Tried using minikube
+Can't use curl
+Can't even port forward

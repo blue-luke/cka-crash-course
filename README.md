@@ -1,6 +1,6 @@
-# 1, 2, 3, 4 are new. Do first
+# 1, 2, 3, 4 are new. Do first. Done but need practice
 # 12, 13 are challenging but from CKAD. Do third. Might be able to pass exam without doing these. But I need to understand and over this material eventually
-# 14, 15, 16, 17 are troubleshooting, don't know how difficult they are. Do second
+# 14, 15, 16, 17 are troubleshooting, don't know how difficult they are. Do second. Done but need practice, esp node file system
 # 5, 6, 7, 8, 9, 10, 11 are largely CKAD
 
 Return to 1 - couldn't get a user authenticated with a minikube cluster to allow me to engage with the RBAC exercise. RBAC itself looks straightforward
