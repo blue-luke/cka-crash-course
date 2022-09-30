@@ -6,6 +6,8 @@
 Return to 1 - couldn't get a user authenticated with a minikube cluster to allow me to engage with the RBAC exercise. RBAC itself looks straightforward
 1, 2, 3, 4 understood and reviewed. Need to practice and memorise a few things
 
+This looks good https://devopscube.com/cka-exam-study-guide/ 
+
 # Certified Kubernetes Administrator (CKA) Crash Course
 
 The ability to manage, troubleshoot and monitor a Kubernetes cluster is in high demand. In response, the Cloud Native Computing Foundation (CNCF) developed the [Certified Kubernetes Administrator (CKA) certification](https://www.cncf.io/certification/cka/) to establish a administrator's credibility and value in the job market to confidently work in a Kubernetes environment. The exam is different from the typical multi-choice format of other certifications. It’s completely performance-based and requires deep knowledge of the tasks at hand under immense time pressure. Are you ready to pass the test on the first go?

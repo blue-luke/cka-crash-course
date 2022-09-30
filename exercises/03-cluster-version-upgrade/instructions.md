@@ -46,3 +46,5 @@ Could figure out a few things
 - Do I have to ssh onto the nodes to upgrade them? I don't think so
 - The specifics of what kubeadm, kubectl and kubelet do
 - Why draining the nodes is necessary
+
+Might need to 'sudo kubectl drain master-node --ignore-daemonsets --delete-local-data' if node can't be drained

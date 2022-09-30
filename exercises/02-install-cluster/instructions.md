@@ -45,3 +45,15 @@ Copy the kube config file from node to local directory. kubeadm init produces th
 Install CNI
 Use join command on worker nodes, ssh onto them and execute
 Fin
+
+Attempt 2
+Elementary
+SSH onto control plane. This might already be done
+kubeadm init --pod-network-cidr=192.168.0.0/16 --kubernetes-version=1.23.5
+The question should tell you what the arguments are, but these are the likely ones
+Carry out the mkdir and copy commands provided
+Apply a CNI using k apply -f URL. Might need to do it twice - once for the operator, once for the custom resource
+Wait for pods to be raised
+Copy the join command
+SSH from control plane onto each worker node
+Execute join command 
